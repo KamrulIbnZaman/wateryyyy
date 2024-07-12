@@ -3,8 +3,6 @@ import 'package:provider/provider.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 // import 'package:workmanager/workmanager.dart';
 
-
-
 import './screen/intro_screen.dart';
 
 import './providers/setting_data.dart';
@@ -14,28 +12,11 @@ import 'screen/about_screen.dart';
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
     FlutterLocalNotificationsPlugin();
+    
+var notificationWord;
 
-// void callbackDispatcher() {
-//   Workmanager().executeTask((taskName, inputData) async {
-//     print('');
-//     return Future.value(true);
-//   });
-// }
-
-void main() async{
-
- WidgetsFlutterBinding.ensureInitialized();
-//  Workmanager().initialize(() {
-//   Workmanager().executeTask((taskName, inputData) async {
-//     print('');
-//     return Future.value(true);
-//   });
-// });
-
-// Workmanager().registerPeriodicTask('uniqueName', 'taskName',);
-
-
-
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   var initializationSettingsAndroid =
       AndroidInitializationSettings('water_glass');
   var initializationSettingsIOS = IOSInitializationSettings(
@@ -104,7 +85,7 @@ class MyApp extends StatelessWidget {
                 routes: {
                   SettingsScreen.routeName: (ctx) => SettingsScreen(),
                   AboutScreen.routeName: (ctx) => AboutScreen(),
-                 },
+                },
               )),
     );
   }
