@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:provider/provider.dart';
+
+import './providers/setting_data.dart';
+import './screen/home_page_screen.dart';
 // import 'package:workmanager/workmanager.dart';
 
 import './screen/intro_screen.dart';
-
-import './providers/setting_data.dart';
 import './screen/settings_screen.dart';
-import './screen/home_page_screen.dart';
 import 'screen/about_screen.dart';
+//
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
     FlutterLocalNotificationsPlugin();
-    
+
 var notificationWord;
 
 void main() async {
