@@ -10,6 +10,7 @@ import './screen/intro_screen.dart';
 import './screen/settings_screen.dart';
 import 'screen/about_screen.dart';
 //
+//
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
     FlutterLocalNotificationsPlugin();
